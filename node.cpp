@@ -8,7 +8,7 @@
 using namespace std;
 
 //Constructor
-Node::Node() {
+Node::Node(Student* newStudent) {
   student = NULL;
   next = NULL;
 }
@@ -32,4 +32,5 @@ void Node::setStudent(Student* newStudent) {
 //Returns student pointer
 Student* Node::getStudent() {
   return student;
-}
+} 
+
