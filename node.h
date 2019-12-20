@@ -9,7 +9,7 @@ using namespace std;
 //Variables and methods for the node class
 class Node {
  public:
-  Node();
+  Node(Student* newStudent);
   ~Node();
   void setNext(Node* newnext);
   Node* getNext();
@@ -22,4 +22,5 @@ class Node {
 
 
 
-#endif
+#endif 
+
