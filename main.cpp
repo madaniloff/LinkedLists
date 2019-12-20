@@ -73,7 +73,7 @@ void addStudent(char* infname, char* inlname, int inid, float ingpa) {
   //If current (the first index) is empty
   if (current == NULL) {
     //Create a new head
-    head = new Node();
+    head = new Node(newStudent);
     //Set the student to the node at the head
     head->setStudent(newStudent);
   }
@@ -85,7 +85,7 @@ void addStudent(char* infname, char* inlname, int inid, float ingpa) {
       current = current->getNext();
     }
     //Set the next index after current to be a new node
-    current->setNext(new Node());
+    current->setNext(new Node(newStudent));
     current->getNext()->setStudent(newStudent);
   }
 }
@@ -107,5 +107,4 @@ void printStudent(Node* next) {
     //Use recursion to print out the next item in the linked list
     printStudent(next->getNext());
   }
-}
-
+} 
