@@ -9,12 +9,12 @@ using namespace std;
 
 //Constructor
 Node::Node(Student* newStudent) {
-  student = NULL;
+  newStudent = NULL;
   next = NULL;
 }
 //Destructor
 Node::~Node() {
-  delete &student;
+  delete &newStudent;
   next = NULL;
 }
 //Set the next node
